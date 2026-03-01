@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Shock Value Records</title>
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+
+    <div class="logo">
+      <a href="index.html" class="logo-wrap">
+        <img src="assets/images/svrecslogo.png" alt="Shock Value Logo">
+        <span class="logo-text">MATA | Audio Engineer</span>
+      </a>
+    </div>
+
+    <div class="nav-right">
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html" class="active">Portfolio</a>
+        <a href="faq.html">FAQ</a>
+      </nav>
+
+    </div>
+
+  </div>
+</header>
+
+<!-- PORTFOLIO HERO -->
+<section class="portfolio-hero">
+
+  <div class="portfolio-hero-overlay"></div>
+
+  <div class="portfolio-hero-content">
+    <h1>Portfolio</h1>
+    <p>Selected Work and Mix Comparisons</p>
+  </div>
+
+</section>
+
+<!-- HEAR THE DIFFERENCE -->
+<section class="comparison-section">
+
+  <h2 class="section-title">HEAR THE DIFFERENCE</h2>
+
+  <div class="comparison-grid">
+
+    <!-- LEFT COLUMN -->
+    <div class="comparison-card"
+         data-before="https://github.com/MataMusicEngineer/audio-b4-a4tr/raw/refs/heads/main/Hazael%20-%20Esto%20se%20llama%20vivir%20(Compilacio%CC%81n)%200_02.mp3"
+         data-after="https://github.com/MataMusicEngineer/audio-b4-a4tr/raw/refs/heads/main/EstoSeLlamaVivir_Full_Master5.01_02.mp3"
+         style="background-image: url('assets/images/hazaelart.jpeg');">
+
+      <div class="comparison-overlay"></div>
+
+      <div class="comparison-content">
+        <h3>Hazael – Esto Se Llama Vivir</h3>
+        <p class="genre">Colombian Chill Indie Rock</p>
+
+        <div class="toggle-buttons">
+          <button class="active-toggle" onclick="switchAudio(this, 'before')">Before</button>
+          <button onclick="switchAudio(this, 'after')">After</button>
+        </div>
+
+        <audio controls class="comparison-audio">
+          <source src="https://github.com/MataMusicEngineer/audio-b4-a4tr/raw/refs/heads/main/Hazael%20-%20Esto%20se%20llama%20vivir%20(Compilacio%CC%81n)%200_02.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+    </div>
+
+    <!-- RIGHT COLUMN - BEN FLOWERS -->
+<div class="comparison-card"
+     data-before="https://github.com/MataMusicEngineer/audio-b4-a4tr/raw/refs/heads/main/Ecstasy_UnmasteredWAV-02.mp3"
+     data-after="https://github.com/MataMusicEngineer/audio-b4-a4tr/raw/refs/heads/main/BenFlowers_FinalMix5_MixMastered-02.mp3"
+     style="background-image: url('assets/images/benart.jpg');">
+
+  <div class="comparison-overlay"></div>
+
+  <div class="comparison-content">
+
+    <h3>Ben Flowers – Ecstasy</h3>
+    <p class="genre">Retro Electronica</p>
+
+    <div class="toggle-buttons">
+      <button class="active-toggle" onclick="switchAudio(this, 'before')">Before</button>
+      <button onclick="switchAudio(this, 'after')">After</button>
+    </div>
+
+    <audio controls class="comparison-audio">
+      <source src="https://github.com/MataMusicEngineer/audio-b4-a4tr/raw/refs/heads/main/Ecstasy_UnmasteredWAV-02.mp3" type="audio/mpeg">
+    </audio>
+
+  </div>
+</div>
+
+  </div>
+
+</section>
+
+<script src="assets/script.js"></script>
+</body>
+</html>
