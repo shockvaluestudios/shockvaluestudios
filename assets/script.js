@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const bioToggle = document.getElementById("bioToggle");
 const fullBio = document.getElementById("fullBio");
 
-if (bioToggle) {
+if (bioToggle && fullBio) {
   bioToggle.addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -69,8 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-});
-
+	
 });
 // Playlist tracks
 const tracks = [
